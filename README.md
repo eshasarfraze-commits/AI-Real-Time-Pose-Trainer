@@ -33,7 +33,3 @@ A desktop application that uses your webcam to analyze exercise form in real tim
 - **OpenCV** — Webcam capture and visual overlay
 - **NumPy** — Joint angle calculations
 - **pyttsx3** — Offline text-to-speech feedback
-
----
-
-## 📁 Project Structure
