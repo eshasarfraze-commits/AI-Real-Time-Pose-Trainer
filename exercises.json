@@ -1,0 +1,114 @@
+{
+  "squat": {
+    "name": "Squat",
+    "joints": [
+      {
+        "id": "left_knee",
+        "landmarks": ["LEFT_HIP", "LEFT_KNEE", "LEFT_ANKLE"],
+        "ideal_angle": 90,
+        "tolerance": 15,
+        "feedback_low": "Go lower — bend your knees more",
+        "feedback_high": "Too deep — rise slightly"
+      },
+      {
+        "id": "right_knee",
+        "landmarks": ["RIGHT_HIP", "RIGHT_KNEE", "RIGHT_ANKLE"],
+        "ideal_angle": 90,
+        "tolerance": 15,
+        "feedback_low": "Go lower — bend your knees more",
+        "feedback_high": "Too deep — rise slightly"
+      },
+      {
+        "id": "back_angle",
+        "landmarks": ["LEFT_SHOULDER", "LEFT_HIP", "LEFT_KNEE"],
+        "ideal_angle": 170,
+        "tolerance": 15,
+        "feedback_low": "Keep your back straight",
+        "feedback_high": "Back too upright — lean slightly forward"
+      }
+    ],
+    "rep_joint": "left_knee",
+    "rep_down_angle": 100,
+    "rep_up_angle": 160
+  },
+  "bicep_curl": {
+    "name": "Bicep Curl",
+    "joints": [
+      {
+        "id": "left_elbow",
+        "landmarks": ["LEFT_SHOULDER", "LEFT_ELBOW", "LEFT_WRIST"],
+        "ideal_angle": 60,
+        "tolerance": 20,
+        "feedback_low": "Curl higher — bring wrist to shoulder",
+        "feedback_high": "Lower the weight more at the bottom"
+      },
+      {
+        "id": "left_shoulder",
+        "landmarks": ["LEFT_HIP", "LEFT_SHOULDER", "LEFT_ELBOW"],
+        "ideal_angle": 175,
+        "tolerance": 10,
+        "feedback_low": "Keep your elbow pinned to your side",
+        "feedback_high": "Elbow drifting — keep it still"
+      }
+    ],
+    "rep_joint": "left_elbow",
+    "rep_down_angle": 150,
+    "rep_up_angle": 50
+  },
+  "pushup": {
+    "name": "Push-up",
+    "joints": [
+      {
+        "id": "left_elbow",
+        "landmarks": ["LEFT_SHOULDER", "LEFT_ELBOW", "LEFT_WRIST"],
+        "ideal_angle": 90,
+        "tolerance": 15,
+        "feedback_low": "Go lower — chest closer to ground",
+        "feedback_high": "Don't lock out fully at the top"
+      },
+      {
+        "id": "body_alignment",
+        "landmarks": ["LEFT_SHOULDER", "LEFT_HIP", "LEFT_ANKLE"],
+        "ideal_angle": 175,
+        "tolerance": 10,
+        "feedback_low": "Hips sagging — engage your core",
+        "feedback_high": "Hips too high — flatten your back"
+      }
+    ],
+    "rep_joint": "left_elbow",
+    "rep_down_angle": 100,
+    "rep_up_angle": 155
+  },
+  "shoulder_press": {
+    "name": "Shoulder Press",
+    "joints": [
+      {
+        "id": "left_elbow",
+        "landmarks": ["LEFT_SHOULDER", "LEFT_ELBOW", "LEFT_WRIST"],
+        "ideal_angle": 180,
+        "tolerance": 15,
+        "feedback_low": "Press all the way up — fully extend arms",
+        "feedback_high": "Lower the weight to shoulder level"
+      },
+      {
+        "id": "left_shoulder_raise",
+        "landmarks": ["LEFT_HIP", "LEFT_SHOULDER", "LEFT_ELBOW"],
+        "ideal_angle": 90,
+        "tolerance": 15,
+        "feedback_low": "Raise elbows to shoulder height",
+        "feedback_high": "Elbows too high — lower to 90 degrees"
+      },
+      {
+        "id": "torso_upright",
+        "landmarks": ["LEFT_SHOULDER", "LEFT_HIP", "LEFT_KNEE"],
+        "ideal_angle": 175,
+        "tolerance": 10,
+        "feedback_low": "Don't lean back — stay upright",
+        "feedback_high": "Leaning forward — straighten your torso"
+      }
+    ],
+    "rep_joint": "left_elbow",
+    "rep_down_angle": 100,
+    "rep_up_angle": 165
+  }
+}
